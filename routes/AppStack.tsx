@@ -4,6 +4,8 @@ import SignUp from '../screens/SignUp';
 import SignIn from '../screens/SignIn';
 import Name from '../screens/Name';
 import Date from '../screens/Date';
+import Workout from '../screens/Workout';
+import Success from '../screens/Success';
 import React from 'react';
 import { Entypo } from '@expo/vector-icons';
 import {RootStackParamList} from '../routes/RootStackParamList';
@@ -56,6 +58,24 @@ const Stack = createStackNavigator<RootStackParamList>();
                     component={Date}
                     options={{
                         headerShown: true,
+                        headerBackImage: ()=>(<Entypo name='arrow-left' size={22}
+                        color="#4a4a4a" style={{ paddingLeft: '20%', marginTop: '-10%' }} />)
+                    }}
+                />
+                <Stack.Screen 
+                    name="Workout" 
+                    component={Workout}
+                    options={{
+                        headerShown: true,
+                        headerBackImage: ()=>(<Entypo name='arrow-left' size={22}
+                        color="#4a4a4a" style={{ paddingLeft: '20%', marginTop: '-10%' }} />)
+                    }}
+                />
+                <Stack.Screen 
+                    name="Success" 
+                    component={Success}
+                    options={{
+                        headerShown: false,
                         headerBackImage: ()=>(<Entypo name='arrow-left' size={22}
                         color="#4a4a4a" style={{ paddingLeft: '20%', marginTop: '-10%' }} />)
                     }}

@@ -5,4 +5,5 @@ export type RootStackParamList = {
     Name: undefined;
     Date: undefined;
     Workout: undefined;
+    Success: undefined;
 };
